@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:score_keeper/screens/game_screen.dart';
-
+import 'package:score_keeper/screens/home_screen.dart';
 void main() {
   runApp(const ScoreBoardApp());
 }
@@ -16,7 +15,7 @@ class ScoreBoardApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home: const GameScreen(),
+      home: const HomeScreen(),
     );
   }
 }
