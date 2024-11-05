@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:score_keeper/models/game_rules.dart';
 import 'package:score_keeper/models/game_type.dart';
+import 'package:score_keeper/screens/settings.dart';
 import 'package:score_keeper/widgets/winner_dialog.dart';
 
 class ModernScoreboard extends StatefulWidget {
@@ -34,7 +35,12 @@ class _ModernScoreboardState extends State<ModernScoreboard> {
                   IconButton(
                     icon: const Icon(Icons.settings),
                     onPressed: () {
-                      // TODO: Implement settings
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SettingScreen()
+                          ),
+                        );
                     },
                   ),
                   IconButton(
